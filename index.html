@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Special Question ❤️</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(135deg, #ff758c, #ff7eb3);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            text-align: center;
+            color: white;
+        }
+
+        .container {
+            background: rgba(255,255,255,0.15);
+            padding: 30px;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 400px;
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+
+        h1 {
+            font-size: 28px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+
+        button {
+            width: 120px;
+            padding: 15px;
+            margin: 10px;
+            border: none;
+            border-radius: 30px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .yes {
+            background: #ff4d6d;
+            color: white;
+        }
+
+        .yes:hover {
+            background: #ff1e4d;
+            transform: scale(1.05);
+        }
+
+        .no {
+            background: white;
+            color: #ff4d6d;
+        }
+
+        .no:hover {
+            background: #ffe5ec;
+            transform: scale(1.05);
+        }
+
+        #message {
+            margin-top: 25px;
+            font-size: 22px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+    <h1>❤️ A Question From My Heart ❤️</h1>
+
+    <p>Will you be my forever? 💖</p>
+
+    <button class="yes" onclick="answerYes()">Yes ❤️</button>
+    <button class="no" onclick="answerNo()">No 💔</button>
+
+    <div id="message"></div>
+</div>
+
+<script>
+function answerYes() {
+    document.getElementById("message").innerHTML =
+        "🥰 I Fucking Love You So Much! ❤️ <br>I just want you to know i'm so happy you're in my life and that i hope you will always remain in it.</br> <br>You're My Everything 🥰</br>";
+}
+
+function answerNo() {
+    document.getElementById("message").innerHTML =
+        "💔 Thank you for your answer but there is no NO!!! <br> PLEASE PRESS YES!!! ❤️ </br>";
+}
+</script>
+
+<audio id="mySong">
+    <source src="Ruth_B_Dandelions.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+    function showMessage() {
+        const song = document.getElementById("mySong");
+
+        song.play();
+
+        alert("Remember: You're smart, beautiful, and capable. I believe in you! ❤️ Now go smash those exams! 📚✨");
+    }
+</script>
+</body>
+</html>
